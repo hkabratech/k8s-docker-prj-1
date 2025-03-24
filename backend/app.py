@@ -5,6 +5,8 @@ import os
 app = Flask(__name__)
 
 def get_db_connection():
+    #print("Connecting to DB at:", os.getenv("POSTGRES_HOST"))
+
     conn = psycopg2.connect(
         dbname=os.getenv("POSTGRES_DB"),
         user=os.getenv("POSTGRES_USER"),
