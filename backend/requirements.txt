@@ -1,0 +1,2 @@
+flask               # Web server framework
+psycopg2-binary     # PostgreSQL client for Python
